@@ -1,0 +1,22 @@
+---
+apiVersion: maistra.io/v1
+kind: ServiceMeshMemberRoll
+metadata:
+  name: default
+  namespace: north-mesh
+spec:
+  members:
+    - north-east
+    - north-west
+    - north-legacy
+---
+apiVersion: maistra.io/v1
+kind: ServiceMeshMemberRoll
+metadata:
+  name: default
+  namespace: south-mesh
+spec:
+  members:
+    - south-east
+    - south-west
+    - south-legacy

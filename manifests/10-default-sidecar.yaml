@@ -1,0 +1,20 @@
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: Sidecar
+metadata:
+  name: default-sidecar-scope
+  namespace: north-mesh
+spec:
+  egress:
+  - hosts:
+    - "north-mesh/*"
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: Sidecar
+metadata:
+  name: default-sidecar-scope
+  namespace: south-mesh
+spec:
+  egress:
+  - hosts:
+    - "south-mesh/*"

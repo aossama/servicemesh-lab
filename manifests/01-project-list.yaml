@@ -1,0 +1,45 @@
+apiVersion: v1
+kind: List
+items:
+- kind: ProjectRequest
+  apiVersion: project.openshift.io/v1
+  metadata:
+    name: north-east
+  displayName: "North East"
+- kind: ProjectRequest
+  apiVersion: project.openshift.io/v1
+  metadata:
+    name: north-west
+  displayName: "North West"
+- kind: ProjectRequest
+  apiVersion: project.openshift.io/v1
+  metadata:
+    name: north-mesh
+  displayName: "North Service Mesh"
+- kind: ProjectRequest
+  apiVersion: project.openshift.io/v1
+  metadata:
+    name: north-legacy
+  displayName: "North Legacy"
+
+- kind: ProjectRequest
+  apiVersion: project.openshift.io/v1
+  metadata:
+    name: south-east
+  displayName: "South East"
+- kind: ProjectRequest
+  apiVersion: project.openshift.io/v1
+  metadata:
+    name: south-west
+  displayName: "South West"
+- kind: ProjectRequest
+  apiVersion: project.openshift.io/v1
+  metadata:
+    name: south-mesh
+  displayName: "South Service Mesh"
+- kind: ProjectRequest
+  apiVersion: project.openshift.io/v1
+  metadata:
+    name: south-legacy
+  displayName: "South Legacy"
+

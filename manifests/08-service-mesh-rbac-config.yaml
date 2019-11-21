@@ -1,0 +1,7 @@
+---
+apiVersion: "rbac.maistra.io/v1"
+kind: ServiceMeshRbacConfig
+metadata:
+  name: default
+spec:
+  mode: 'ON'
